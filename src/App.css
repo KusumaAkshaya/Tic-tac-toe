@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.Square {
+  width: 50px;
+  height: 50px;
+  margin-top: -1.7px;
+  margin-right: -1.7px;
+  background-color: whitesmoke;
+  border: 1.7px solid black;
+  padding: 0;
+  font-size: 43px;
+  cursor: pointer;
+  line-height: 34px;
+  float: left;  /* Used to postion boxs correctly after clicking*/
+}
+
+.Row:after{
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.Square:focus{
+  outline: none;
+}
+
+
